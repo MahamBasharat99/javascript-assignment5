@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // task1
+        var value=prompt("Enter number,letter etc");
+        if(value.charCodeAt(0)>=65 && value.charCodeAt(0)<=90){
+            alert("this is Uppercase ");
+        }
+        else if(value.charCodeAt(0)>=97 && value.charCodeAt(0)<=122){
+            alert("this is Lowercase");
+        
+        }
+        else{
+            alert("this is number");
+        }
+
+    
+
+
+
+
+        // task2
+        var val1=+prompt("Enter first integer");
+        
+        var val2=+prompt("Enter second integer");
+        if(val1===val2){
+            alert("Integers are equal")
+        }
+        else if(val1>val2){
+            alert("integer 1 is greater");
+        }
+        else{
+            alert("integer 2 is greater")
+        }
+    
+   // task3
+
+        
+        var inputnum=+prompt("Enter number");
+        if(inputnum>0){
+            alert("Number is positive")
+        }
+        else if(inputnum<0){
+            alert("Number is negative");
+        }
+        else{
+            alert("Number is zero");
+        }
+    
+
+      
+   // task4
+
+        
+   var entervowel=prompt("Enter Character of 1 length");
+        if(entervowel==="A"||entervowel==="E"||entervowel==="I"||entervowel==="O"||entervowel==="U"||entervowel==="a"||entervowel==="e"||entervowel==="i"||entervowel==="o"||entervowel==="u"){
+            alert("True")
+        }
+        else {
+            alert("False");
+        }
+
+        // task5
+
+        
+        var correctpass=prompt("Enter & Reset Your Password");
+        var usergetpass=prompt("Enter Password");
+        if(usergetpass==="")
+   {
+       alert("Plz enter your password");
+   }
+   else if(correctpass===usergetpass){
+       alert("Password matches the original password")
+   }
+   else{
+       alert("Inncorrect password");
+   }
+// task 6
+var greeting; 
+var hour = 13; 
+if (hour < 18) {
+     greeting = "Good day"; 
+     alert(greeting);
+     }
+     else
+     {
+ greeting = "Good evening";
+ alert(greeting); }
+      
+
+      // task 7
+var time=prompt("Enter clock time in 24 hours format")
+ 
+// if (time<=12) {
+  
+//   alert(time+"AM")
+//      }
+//      else if(time>=12)
+//      {
+//          time=time-12;
+
+//  alert(time+"PM"); }
+//  else{
+//      alert("Invalid password");
+//  }
+if(time>=00 && time<= 12){
+    alert("Good Morning!");
+}
+else if(time>=12 && time<= 17){
+    alert("Good AfterNoon!");
+
+}
+else if(time>=17 && time<= 21){
+    alert("Good Evening!");
+
+}
+else if(time>=21 && time<= 23){
+    alert("Good Night!");
+
+}
+
+ 
+
+    </script>
+</body>
+</html>

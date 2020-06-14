@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src=""></script>
+</head>
+<body>
+    <script>
+        // task1
+        // var m=[["maham"],["Ali"],["kanwal"]];
+        // alert(m);
+
+        // task2
+// var array=[0,1,2,3][1,0,1,2][2,1,0,1];
+// for(var i=0;i<arary.length;i++){
+//     document.write(array[i,j]);
+// }..
+        // task3
+        var num=[1,2,3,4,5,6,7,8,9,10];
+        for(var i=0;i<10;i++){
+            document.write(num[i]+"<br>");
+        }
+        // task4
+ 
+        var tableno=+prompt("Enter table #");
+        var tablelenght=+prompt("Enter table length");
+        document.write("<h1>Table of "+tableno +"</h1>");
+        for( var i=1; i<=tablelenght;i++){
+            var l=tableno*i;
+          document.write("<br>"+tableno +" * "+ i +"  = "+l) ; 
+        }
+        // task5
+        document.write("<h1>Fruits Name</h1>");
+      var   fruits = ["Apple","Banana","Orange","Mango","Strawberry"];
+      for(var i=0; i<fruits.length;i++){
+          document.write("<br>"+fruits[i]);
+      }
+      for(var i=0; i<fruits.length;i++){
+          document.write("<br>Element at index "+i+" is "+fruits[i]);
+      }
+        // task6
+        document.write("<h1>Counting</h1><br>");
+        var a=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+        for(var i=0;i<15;i++){
+            document.write(""+a[i]+" , ");
+        }
+        document.write("<h1>Reverse Counting</h1><br>");
+        var r=[10,9,8,7,6,5,4,3,2,1];
+        for(var  i=0;i<10;i++){
+            document.write(""+r[i]+" , ");
+        }
+        document.write("<h1>EVen Counting</h1><br>");
+        var e=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+        for(var i=0;i<20;i=i+2){
+            document.write(""+e[i]+" , ");
+        }
+        document.write("<h1>Odd Counting</h1><br>");
+        var o=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+        for(var i=0;i<20;i=i+2){
+            document.write(""+o[i]+" , ");
+        }
+        document.write("<h1>Series</h1><br>");
+        var series=["2k","4k", "6k", "8k", "10k", "12k", "14k", "16k", "18k", "20k"];
+        for(var i=0;i<10;i++){
+            document.write(""+series[i]+" , ");
+        }
+
+        // task7
+       var A = ["cake", "apple-pie", "cookie", "chips", "patties"];
+        var enterchoice=prompt("Enter item");
+    for(var i=0; i<A.length;i++){
+        if(enterchoice==A[i]){
+        
+        alert(enterchoice+" is available in our bakery at index"+i);
+     } 
+    }
+     alert("We are Sorry "+enterchoice+" is not available in our bakery");
+        
+        // task8
+        var largest=[24,53,78,91,12];
+        var max=largest[0];
+        for(var i=0; i<largest.length;i++){
+            if(max<largest[i]){
+                max=largest[i];
+            }
+        }
+        document.write("<br><br>"+max+"is the largest number");
+        // task9
+        var small=[24,53,78,91,12];
+        var min=small[0];
+        for(var i=0; i<small.length;i++){
+            if(min>small[i]){
+                min=small[i];
+            }
+        }
+        document.write("<br>"+min+"is the smallest number<br>");
+        // task10
+        var arrtab=[];
+    for(var i=1;i<100;i++){
+        arrtab[i]=5*i;
+        if(arrtab[i]<=100){
+        document.write(arrtab[i]+"   ");}
+    }
+   
+     
+    </script>
+    
+</body>
+</html>

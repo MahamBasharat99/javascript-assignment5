@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src=""></script>
+</head>
+<body>
+    <script>
+        var num1,num2,sum;
+        num1=10;
+        num2=20;
+        sum=num1+num2;
+        sub=num2-num1;
+        mul=num1*num2;
+        mod=num2%num1;
+        // task1
+        document.write("<br>Sum of " +num1 +" and "+ num2 +" is " +sum);
+        // task2
+        document.write("<br>Subtraction of " +num1 +" and "+ num2 +" is " +sub);
+        document.write("<br>Multipication of " +num1 +" and "+ num2 +" is " +mul);
+        document.write("<br>Modulus of " +num1 +" and "+ num2 +" is " +mod);
+    // task3
+    var jsvar;
+    jsvar=100;
+    document.write("<br><br>Value after Variable Declaration is  " +jsvar);
+   jsvar=5;
+   document.write("<br>Initial value  is  " +jsvar);
+   jsvar++;
+   document.write("<br>Value after increment   is  " +jsvar);
+   jsvar=jsvar+7;
+   document.write("<br>Value after addition is  " +jsvar);
+   jsvar--;
+   document.write("<br>Value after decrement   is  " +jsvar);
+   document.write("<br>Remainder   is  " +jsvar%3);
+
+//    task4
+var costmovie=600 ;
+costmovie= costmovie*5;
+document.write("<br><br>Total cost to buy 5 tickets of a movie is  "+ costmovie +"PKR.");
+
+// task5
+var tableof=4;
+document.write("<br><br><h1>Table of "+tableof+"</h1>");
+for(var i=1; i<=10; i++)
+{var tab="";
+   var tab=tableof*i;
+document.write("<br>" +tableof +" * "+i+" = " +tab); }
+
+
+// task #6
+document.write("<h1>Temperature Converter</h1>")
+var celciustemp;
+celciustemp=25;
+var F;
+F=(celciustemp*9/5)+32;
+document.write( +celciustemp + "&#8451"+" is " + F+"&#8457" );
+var farenheittemp;
+farenheittemp=70;
+var C;
+C=(farenheittemp-32)*5/9;
+document.write("<br>" +farenheittemp+"&#8457"+" is " + C+"&#8451" );
+
+
+// task#7
+document.write("<h1>Shopping Cart</h1>")
+var priceitem1=650;
+var priceitem2=100;
+var quantity1=3;
+var quantity2=7;
+var shippingcharges=100;
+ var add=(priceitem1*quantity1)+(priceitem2*quantity2)+shippingcharges;
+document.write(" Price of item 1 is " +priceitem1);
+document.write("<br> Quantity of item 1 is " +quantity1); 
+document.write("<br> Price of item 1 is " +priceitem2);
+document.write("<br> Quantity of item 1 is " +quantity2); 
+document.write("<br> Shipping Charges is " +shippingcharges );
+document.write("<br> Total cost of your order is " +add);
+
+
+// task #8
+document.write("<h1>Mark Sheet</h1>")
+var totalmarks=980;
+var marksobtaim=804;
+var percentage=marksobtaim/totalmarks *100;
+document.write("Total Marks:" +totalmarks);
+document.write("<br>Obtained Marks:" +marksobtaim);
+document.write("<br>Percentage is :" +percentage);
+
+
+
+// task #9
+document.write("<h1>Convet to pakistani currency</h1>")
+var usdollars=10;
+var saudiriyal=25;
+var uspak=usdollars*104.80;
+var saudipak=saudiriyal*28;
+var toatalcurency=uspak+saudipak;
+document.write("Total Currency in PKR :" +toatalcurency);
+
+
+// task #10
+document.write("<h1>Operation in a single expression</h1>")
+var number=10;
+var singlexpression=(number+5)*10/2;
+document.write("Now value is :" +singlexpression);
+
+
+
+
+// task #11
+document.write("<h1>Calculate Age</h1>")
+var currentyear=2016;
+var birthyear=1992;
+var findyear=currentyear-birthyear;
+document.write("Current Year" +currentyear);
+document.write("<br>Birth Year " +birthyear);
+document.write("<br>Your Age is  :" +findyear);
+document.write("<br>OR");
+document.write("<br>Your Age is  : 23 years 6 month" );
+
+
+// task #12
+document.write("<h1>The Geometrizer</h1>")
+var radius=20;
+var circumference=2*3.142*20;
+var area=3.142*radius*radius;
+document.write("Radius of a Circle " +radius);
+document.write("<br>Circumference of a Circle " +circumference);
+document.write("<br>Arae of a Circle " +area);
+
+
+
+
+// task#13
+document.write("<h1>LifeTime Supply Calculator</h1>")
+var favitem="Rio Choclate Biscuit";
+var itemneed=3;
+var estimateage=65;
+var curentage=15;
+var totalbiscuit=(estimateage-curentage)*itemneed;
+
+ 
+document.write(" Favourite Item " +favitem);
+document.write("<br> Current Age " +curentage); 
+document.write("<br> Estimate Age " +estimateage);
+document.write("<br> Amount of Biscuits Per Day " +itemneed); 
+document.write("<br> You will need " +totalbiscuit+ " biscuits to last you until the ripe old age " +estimateage);
+
+
+
+
+   </script>
+</body>
+</html>

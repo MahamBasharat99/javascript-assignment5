@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src=""> </script>
+</head>
+<body>
+    <script>
+        // task#1
+        document.write("<h1>Result</h1>")
+ var aa=10;
+ document.write("The value of a is: " +aa);
+ document.write("<br>....................................... <br>" );
+ ++a;
+ document.write("<br>The value of ++a is: " +aa);
+ document.write("<br>Now the value of a is: " +aa+"<br>");
+ document.write("<br>The value of a++ is: " +aa);
+ a++;
+ document.write("<br>Now the value of a is: " +aa +"<br>");
+ --a;
+ document.write("<br>The value of --a is: " +aa);
+ document.write("<br>Now the value of a is: " +aa +"<br>");
+ document.write("<br>The value of a-- is: " +aa);
+ a--;
+ document.write("<br>Now the value of a is: " +aa);
+
+
+//  task#2
+var a=2,b=1;
+var result=--a - --b + ++b + b--;
+// --a=1;
+// --a - --b=1-0;
+// --a - --b + ++b=1+1=2;
+// --a - --b + ++b + b--=2+1;
+document.write("<br><br>a  is: " +a);
+document.write("<br>b  is: " +b);
+document.write("<br>Result  is: " +result+"<br>");
+
+
+
+// task3
+var name=prompt("Enter Your name");
+alert("Welcome to " +name);
+
+
+// task4
+
+var tableof=prompt("Enter number for table");
+if(tableof!=""){
+document.write("<br><br><h1>Table of "+tableof+"</h1>");
+for(var i=1; i<=10; i++)
+{var tab="";
+   var tab=tableof*i;
+document.write("<br>" +tableof +" * "+i+" = " +tab); }}
+else{
+    var tableof=5;
+    document.write("<br><br><h1>Table of "+tableof+"</h1>");
+for(var i=1; i<=10; i++)
+{var tab="";
+   var tab=tableof*i;
+document.write("<br>" +tableof +" * "+i+" = " +tab); }
+
+}
+
+
+// task5
+var subject1=prompt("Enter first Subject");
+var subject2=prompt("Enter second Subject");
+var subject3=prompt("Enter third Subject");
+var outof=100;
+var obt1=+prompt("Obtain Marks of "+ subject1+"subject");
+var obt2=+prompt("Obtain Marks of "+ subject2+"subject");
+var obt3=+prompt("Obtain Marks of "+ subject3+"subject");
+var totalmarks=outof*3;
+var obtainmarks=obt1+obt2+obt3;
+var persub1=obt1/outof*100;
+var persub2=obt2/outof*100;
+var persub3=obt3/outof*100;
+var percentage=obtainmarks/totalmarks*100;
+document.write("<table><tr><th><b>Subjects &nbsp Total-Marks &nbsp Obtained-Marks &nbsp Percentage</th></tr>");
+document.write(" <table><tr><td>&nbsp&nbsp&nbsp"+subject1+" &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp"+outof+" &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    "+obt1+"    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp "+persub1+"%</td></tr>");
+document.write(" <table><tr><td>&nbsp&nbsp&nbsp"+subject2+" &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp"+outof+" &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    "+obt2+"    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp "+persub2+"%<td></tr>");
+document.write("<table> <tr><td>&nbsp&nbsp&nbsp"+subject3+" &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp"+outof+" &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    "+obt3+"    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp "+persub3+"%<td></tr>");
+document.write(" <table><tr><td>&nbsp&nbsp&nbsp  &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp &nbsp<b>300</b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp  <b> "+obtainmarks+"</b>    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>"+percentage+"</b>%</td></tr></table>");
+ 
+
+ 
+ 
+ </script>
+ 
+    
+</body>
+</html>

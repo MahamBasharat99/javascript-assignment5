@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <script>
+        // task 1
+        var students = [""];
+        //   // task 2
+        //  var stud=new students();
+        //   // task 3
+         var students = ["Maham","Mubeen","Maheen","Muqadass"];
+        //   // task 4
+      var number=[1,2,3,4,5,6];
+        //     // task 5
+           var boolean=[true,false];
+        //     // task 6
+          var mixedArray = [1, "Bob", "Now is", true];
+            // task 7
+           
+            var education=["SSC","HSC","BCS","BCOM","BS","MS","PhD","M.phil"];
+            document.write("<h1>Qualification</h1>")
+            var m=0;
+       for(var i=0;i<8;i++)
+          {
+             
+            m++;
+            document.write( m +"   "+education[i]+"<br>");
+            }
+              // task 8
+              var student=["maham","mubeen","maheen"];
+              var score=[320,230,480];
+              document.write("<br><br>Score of "+student[0]+" is"+score[0]+".Percentage :"+score[0]/500*100+"%")
+              document.write("<br>Score of "+student[1]+" is"+score[1]+".Percentage :"+score[1]/500*100+"%")
+              document.write("<br>Score of "+student[2]+" is"+score[2]+".Percentage :"+score[2]/500*100+"%")
+
+                // task 9
+                 var color=["red","green","blue"];
+                document.write("<br><br>"+color);
+
+
+                // var usercolor=prompt("Enter color");
+                // color.unshift(usercolor);
+                // // document.write("<br><br>"color);
+
+
+                // var usercolor=prompt("Enter color");
+                // color.push(usercolor);
+                //     document.write("<br><br>"+color);
+
+
+                color.unshift("Grey","Orange");
+                 document.write("<br><br>"+color);
+                 color.shift();
+                 document.write("<br>"+color);
+                 color.pop();
+                 document.write("<br>"+color);
+                 
+                 
+
+                 var user=prompt("Enter color name ");
+                 var userindex=prompt("Enter index at which colorname is add ");
+                 color.splice(userindex,0,user);
+                 
+                 document.write("<br>"+color);
+                 
+                 
+                 var userdel=prompt("Enter how many colors you want to delete");
+                 var userindexdel=prompt("Enter index at which colorname is delete ");
+                 color.splice(userindexdel,2);
+                 
+                 document.write("<br>"+color);
+                 
+
+
+                  // task 10
+                  var scoreofstudent=[320,230,120,480];
+                  scoreofstudent.sort();
+                  document.write("<br><br>"+scoreofstudent);
+
+
+                  // task11
+                  var cities=["Karachi","Lahore","Islamabad","Quetta","Peshawar"];
+                  var copy=cities.slice(2,4);
+                  document.write("<br><br>"+copy);
+                  
+                  // task12
+                  document.write("<h1>Arrays</h1>");
+                  var arr = ["This","is","my","cat"];
+                  document.write("<br><br>"+arr);
+                  document.write("<h1>Strings</h1>");
+                 var arrjoin= arr.join("   ");
+                  document.write(arrjoin+"<br>");
+                  
+
+                  // task13
+                  document.write("<h1>Devices</h1>");
+                  var array=["Keyboard","Mouse","Printer","Monitor"];
+                  document.write(array+"<br>");
+                  for(var i=0;i<array.length;i++){
+                      document.write("OUT<br>"+array.shift()+"<br>");
+                      array.length=array.length+1;
+                  }
+                    // task14
+                    var arrr=["Apple","Samsung","Motorolla","Sony","Haier"];
+                  document.write("<br>"+arrr+"<br>");
+                  for(var i=arrr.length-1;i>=0;i--){
+                      document.write("OUT<br>"+ arrr.pop()+"<br>");
+                  }
+
+                     // task15
+                     document.write("<h1>Dropdown</h1>");
+                     var arrr3=["Apple","Samsung","Motorolla","Sony","Haier"];
+                  document.write("<br>"+arrr3+"<br>");
+                  document.write("<select>")  ;  
+                  for(var i=0;i<arrr3.length;i++){
+                 
+                document.write("<option>"+arrr3[i]+"</option>");
+                  }
+                  document.write("</select>")  ;  
+    </script>
+</body>
+</html>
